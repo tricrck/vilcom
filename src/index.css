@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 26% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 26% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 26% 14%;
+
+    --primary: 225 79% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 100% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 170 42% 17%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 225 79% 55%;
+
+    --radius: 0.5rem;
+
+    --vilcom-blue: 225 79% 55%;
+    --vilcom-orange: 30 100% 55%;
+    --vilcom-dark-green: 170 42% 17%;
+    --vilcom-navy: 220 44% 24%;
+    --vilcom-light-bg: 195 100% 97%;
+    --vilcom-wave-bg: 220 44% 24%;
+
+    --shadow-card: 0 0 0 1px rgba(0,0,0,.05), 0 2px 4px rgba(0,0,0,.05), 0 12px 24px rgba(0,0,0,.05);
+    --shadow-card-hover: 0 0 0 1px rgba(0,0,0,.08), 0 4px 8px rgba(0,0,0,.1), 0 16px 32px rgba(0,0,0,.1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    text-wrap: pretty;
+    line-height: 1.6;
+  }
+}
+
+@layer components {
+  .vilcom-section {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .vilcom-gradient-bar {
+    background: linear-gradient(90deg, hsl(var(--vilcom-blue)), hsl(var(--vilcom-orange)));
+    height: 4px;
+  }
+
+  .vilcom-nav-link {
+    @apply text-primary font-bold text-[15px] px-2.5 xl:px-3.5 py-2.5 transition-colors duration-200;
+  }
+
+  .vilcom-nav-link:hover,
+  .vilcom-nav-link.active {
+    color: hsl(var(--vilcom-orange));
+  }
+
+  .vilcom-btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-md font-bold text-primary-foreground transition-all duration-200;
+    background: hsl(var(--vilcom-blue));
+  }
+
+  .vilcom-btn-primary:hover {
+    background: hsl(225 79% 48%);
+    transform: scale(1.02);
+  }
+
+  .vilcom-btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .vilcom-learn-more {
+    @apply inline-flex items-center gap-1 font-bold transition-colors duration-200;
+    color: hsl(var(--vilcom-blue));
+  }
+
+  .vilcom-learn-more:hover {
+    color: hsl(var(--vilcom-orange));
+  }
+
+  .vilcom-card {
+    @apply rounded-xl bg-card p-6 transition-all duration-200;
+    box-shadow: var(--shadow-card);
+  }
+
+  .vilcom-card:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-4px);
+  }
+
+  .vilcom-pricing-card {
+    @apply rounded-2xl bg-card overflow-hidden transition-all duration-200;
+    box-shadow: var(--shadow-card);
+  }
+
+  .vilcom-pricing-card:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+}
+
+/* Scroll indicator at top */
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  z-index: 100;
+  background: hsl(var(--vilcom-orange));
+  transition: width 0.1s;
+}
+
+/* WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  background: #25d366;
+  color: white;
+  border-radius: 50px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+/* Floating dot animation */
+@keyframes float-dot {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-12px) scale(1.2);
+    opacity: 1;
+  }
+}
+
+.animate-float-dot {
+  animation: float-dot 3s ease-in-out infinite;
+}
