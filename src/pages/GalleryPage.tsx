@@ -104,7 +104,6 @@ const GalleryPage = () => {
     <div className="min-h-screen flex flex-col">
       <ScrollIndicator />
       <Header />
-
       <main className="flex-1">
         {/* Hero banner */}
         <div
@@ -112,9 +111,6 @@ const GalleryPage = () => {
           style={{ background: "linear-gradient(180deg, hsl(195 100% 97%) 1%, hsl(0 0% 100%) 100%)" }}
         >
           <div className="vilcom-section text-center flex flex-col items-center">
-            <Link to="/" className="vilcom-learn-more text-sm mb-6 inline-flex items-center gap-1">
-              <ArrowLeft className="w-4 h-4" /> Back to Home
-            </Link>
             <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">Our Gallery</h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
               Browse through our gallery of images showcasing our infrastructure, events, and team.

@@ -188,10 +188,6 @@ const ContactPage = () => {
           </svg>
 
           <div className="vilcom-section py-14 md:py-20 relative z-10">
-            <Link to="/" className="vilcom-learn-more text-sm mb-8 inline-flex items-center gap-1">
-              <ArrowLeft className="w-4 h-4" /> Back to Home
-            </Link>
-
             {/* Two-col header — matches original */}
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-10">
               <h1 className="text-4xl md:text-5xl font-extrabold text-foreground leading-tight">
