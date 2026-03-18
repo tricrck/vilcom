@@ -111,10 +111,7 @@ const GalleryPage = () => {
           style={{ background: "linear-gradient(180deg, hsl(195 100% 97%) 1%, hsl(0 0% 100%) 100%)" }}
         >
           <div className="vilcom-section text-center flex flex-col items-center">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">Our Gallery</h1>
-            <p className="text-lg text-muted-foreground max-w-2xl">
-              Browse through our gallery of images showcasing our infrastructure, events, and team.
-            </p>
+            <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-0">Our Gallery</h1>
           </div>
         </div>
 
