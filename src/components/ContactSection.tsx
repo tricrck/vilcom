@@ -130,7 +130,7 @@ const ContactSection = () => {
           <div className="contact-info-card">
             <div className="contact-info-half">
               <p>Email Us</p>
-              <h4>info@vilcom.co.ke</h4>
+              <h4>info@Sigmon.africa</h4>
             </div>
             <div className="contact-info-half">
               <p>Call Us</p>

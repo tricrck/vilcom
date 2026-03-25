@@ -10,12 +10,12 @@ const testimonials = [
     role: "Customer",
   },
   {
-    quote: "What I love most about Vilcom Networks Communications is I feel like I'm working with someone from Team Family Reach.",
+    quote: "What I love most about Sigmon Networks Communications is I feel like I'm working with someone from Team Family Reach.",
     name: "Alex Kiiru",
     role: "Customer",
   },
   {
-    quote: "Personally, I have had a great experience dealing with Vilcom Networks Ltd especially when it came to their service delivery. They are friendly, inclusive and have always been available 24/7 to solve any issues I've encountered with my internet connection.",
+    quote: "Personally, I have had a great experience dealing with Sigmon Networks Ltd especially when it came to their service delivery. They are friendly, inclusive and have always been available 24/7 to solve any issues I've encountered with my internet connection.",
     name: "Kevin Kimani",
     role: "Customer",
   },

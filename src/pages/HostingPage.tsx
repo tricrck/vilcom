@@ -56,7 +56,7 @@ const HostingPage = () => {
           </h1>
 
           <p style={{ fontSize: 15, color: "#6b7280", margin: "0 0 32px", lineHeight: 1.65 }}>
-            You're being redirected to the Vilcom Hosting portal in{" "}
+            You're being redirected to the Sigmon Hosting portal in{" "}
             <strong style={{ color: "#1b75bc" }}>{countdown}</strong> second
             {countdown !== 1 ? "s" : ""}…
           </p>

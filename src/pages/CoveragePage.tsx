@@ -1,13 +1,10 @@
 /**
- * CoveragePage.tsx
- * Matches https://vilcom.co.ke/coverage/ exactly per screenshots.
- *
  * Section 1: "Explore Our Expansive Coverage" heading
- *            + VILCOM OPS custom globe widget (iframe embed)
+ *            + Sigmon OPS custom globe widget (iframe embed)
  *            + Map Layers panel + Quick Navigation + Camera Controls panels
  *            + Stats card (4 East African Countries, 19 Kenyan Counties, 133,316 Users)
  *
- * Section 2: "Discover the Reach of Vilcom Networks" heading
+ * Section 2: "Discover the Reach of Sigmon Networks" heading
  *            + subtitle paragraph (bold, centered)
  *            + Kenya SVG county map (orange=Home, blue=Business, beige=No Coverage)
  *              with dotted arrow labels for each county
@@ -43,7 +40,7 @@ function useReveal(delay = 0) {
 
 /* ─────────────────────────────────────────────────────────────
    SECTION 1 — GLOBE WIDGET
-   The live site embeds a custom VILCOM OPS 3D globe widget via iframe.
+   The live site embeds a custom Sigmon OPS 3D globe widget via iframe.
    We replicate the full panel UI faithfully around it.
    ───────────────────────────────────────────────────────────── */
 function GlobeSection() {
@@ -91,7 +88,7 @@ function GlobeSection() {
           {/* MAP / GLOBE */}
           <iframe
             key={view}
-            title="Vilcom Coverage Map"
+            title="Sigmon Coverage Map"
             src={MAP_SRCS[view]}
             style={{ display:"block", width:"100%", height:600, border:0 }}
             allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
@@ -379,7 +376,7 @@ function KenyaMap() {
         style={{ width:"100%", maxWidth:700, display:"block", margin:"0 auto", overflow:"visible" }}
         xmlns="http://www.w3.org/2000/svg"
         role="img"
-        aria-label="Vilcom Networks Kenya Coverage Map"
+        aria-label="Sigmon Networks Kenya Coverage Map"
       >
         {/* ── COUNTY SHAPES (simplified but recognisable Kenya outlines) ── */}
 
@@ -682,7 +679,7 @@ function CoverageMapSection() {
         {/* Sub-heading */}
         <h2 style={{ fontSize:"clamp(1.4rem,3vw,1.9rem)", fontWeight:800, color:NAVY,
           textAlign:"center", margin:"0 0 16px" }}>
-          Discover the Reach of Vilcom Networks
+          Discover the Reach of Sigmon Networks
         </h2>
 
         {/* Bold subtitle — matches screenshot */}

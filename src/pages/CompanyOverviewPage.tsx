@@ -131,7 +131,7 @@ function WhatWeDo() {
                   maxWidth: 440,
                 }}
               >
-                Experience the future of connectivity with Vilcom Networks!
+                Experience the future of connectivity with Sigmon Networks!
                 From affordable high-speed internet solutions for homes to robust fiber optics
                 technology for businesses, we deliver reliable web services, hosting, and seamless
                 hotspot connectivity.
@@ -180,7 +180,7 @@ function WhatWeDo() {
           >
             <img
               src="https://vilcom.co.ke/wp-content/uploads/2024/06/Kilamtu_Plain_Compressed.jpg"
-              alt="Vilcom Networks"
+              alt="Sigmon Networks"
               style={{
                 position: "absolute", inset: 0,
                 width: "100%", height: "100%",
@@ -240,7 +240,7 @@ const CORIP_ITEMS = [
   { key: "O", label: "Operational Efficiency", tagline: "We work smarter to deliver better.",                 body: "We streamline processes, eliminate waste, and invest in systems that empower our teams. Efficiency is not just about speed—it's about sustainable, scalable excellence." },
   { key: "R", label: "Revenue Growth",         tagline: "We drive value that fuels our future.",              body: "We think commercially and act strategically to unlock new opportunities. Sustainable growth is the result of disciplined execution, customer focus, and bold ambition." },
   { key: "I", label: "Innovation & Creativity",tagline: "We imagine what's next.",                            body: "We challenge the status quo and embrace fresh ideas. In a fast-changing world, we stay ahead by fostering curiosity, experimentation, and creative problem-solving." },
-  { key: "P", label: "People Focus",           tagline: "We win as one, with care and respect.",              body: "Our people are our greatest strength. We cultivate a culture of trust, inclusion, and shared purpose—because when our people thrive, Vilcom thrives." },
+  { key: "P", label: "People Focus",           tagline: "We win as one, with care and respect.",              body: "Our people are our greatest strength. We cultivate a culture of trust, inclusion, and shared purpose—because when our people thrive, Sigmon thrives." },
 ];
 
 function CoripBlock() {
@@ -256,7 +256,7 @@ function CoripBlock() {
       }}
     >
       <p style={{ fontSize: 15, fontWeight: 700, color: NAVY, margin: "0 0 20px" }}>
-        C.O.R.I.P – The Vilcom Way
+        C.O.R.I.P – The Sigmon Way
       </p>
       {CORIP_ITEMS.map((v, i) => (
         <p
@@ -292,7 +292,7 @@ function GuidingPrinciples() {
             delay={0}
             icon={<svg viewBox="0 0 192 512" style={{ width: 22, height: 22, fill: "currentColor" }}><path d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"/></svg>}
             title="Who we are"
-            body="Vilcom Networks Limited is a kenyan based telecommunications company headquartered in Nairobi and serving all the counties in the Republic of Kenya with high-speed internet and is committed to Quality products, outstanding services, and exceptional customer care."
+            body="Sigmon Networks Limited is a kenyan based telecommunications company headquartered in Nairobi and serving all the counties in the Republic of Kenya with high-speed internet and is committed to Quality products, outstanding services, and exceptional customer care."
           />
           <PrincipleRow
             delay={80}
@@ -326,19 +326,19 @@ function GuidingPrinciples() {
    ───────────────────────────────────────────────────────────── */
 const TESTIMONIALS = [
   {
-    quote: '" What I love most about the Vilcom Networks Communications is I feel like I\'m working with someone from Team Family Reach. "',
+    quote: '" What I love most about the Sigmon Networks Communications is I feel like I\'m working with someone from Team Family Reach. "',
     name: "Alex Kiiru",
     role: "Client",
     avatar: "https://vilcom.ke/wp-content/uploads/2024/06/avatar_Compressed.jpg",
   },
   {
-    quote: '"Personally, I have had a great experience dealing with Vilcom Networks Ltd especially when it came to their service delivery. They are friendly, inclusive and have always been available 24/7 to solve any issues I\'ve encountered with my internet connection."',
+    quote: '"Personally, I have had a great experience dealing with Sigmon Networks Ltd especially when it came to their service delivery. They are friendly, inclusive and have always been available 24/7 to solve any issues I\'ve encountered with my internet connection."',
     name: "Kevin Kimani",
     role: "Client",
     avatar: "https://vilcom.ke/wp-content/uploads/2024/06/avatar_Compressed.jpg",
   },
   {
-    quote: '"Great customer relationship. Vilcom Networks Limited have maintained a wonderful customer service since we started working with them."',
+    quote: '"Great customer relationship. Sigmon Networks Limited have maintained a wonderful customer service since we started working with them."',
     name: "Terry Mwihaki",
     role: "Client",
     avatar: "https://vilcom.ke/wp-content/uploads/2024/06/avatar_Compressed.jpg",

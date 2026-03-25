@@ -11,7 +11,7 @@ const OurStory = () => {
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/8mu0nf_347w?modestbranding=1"
-              title="Vilcom Networks Story 1"
+              title="Sigmon Networks Story 1"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full"
@@ -23,7 +23,7 @@ const OurStory = () => {
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/V7ukK1U4NRw?modestbranding=1"
-              title="Vilcom Networks Story 2"
+              title="Sigmon Networks Story 2"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full"

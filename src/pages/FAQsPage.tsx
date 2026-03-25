@@ -12,25 +12,25 @@ const FAQ_GROUPS = [
     group: "General",
     faqs: [
       {
-        q: "How can I get through to Vilcom Networks in case I have an issue with my network?",
+        q: "How can I get through to Sigmon Networks in case I have an issue with my network?",
         a: (
           <div className="space-y-2 text-sm text-muted-foreground leading-relaxed">
             <p>Whenever you have an issue with your network that you're unable to solve, call our helpline contacts which can be found on a sticker attached to your router.</p>
             <p>The contacts are:</p>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Safaricom: <strong className="text-foreground">0111 028800</strong> (Helpline Call Only)</li>
-              <li>Safaricom: <strong className="text-foreground">0726 888777</strong> (WhatsApp/Call)</li>
-              <li>Airtel: <strong className="text-foreground">0755 055555</strong> (WhatsApp/SMS)</li>
+              {/* <li>Safaricom: <strong className="text-foreground">0111 028800</strong> (Helpline Call Only)</li> */}
+              <li>Safaricom: <strong className="text-foreground">0734711828</strong> (WhatsApp/Call)</li>
+              {/* <li>Airtel: <strong className="text-foreground">0755 055555</strong> (WhatsApp/SMS)</li> */}
             </ul>
-            <p>You can also reach us via email: <strong className="text-foreground">customercare@vilcom.co.ke</strong> or on social media <strong className="text-foreground">@vilcomnetworks</strong> on Facebook, Instagram and Twitter.</p>
+            <p>You can also reach us via email: <strong className="text-foreground">info@sigmon.africa</strong> or on social media <strong className="text-foreground">@sigmonnetworks</strong> on Facebook, Instagram and Twitter.</p>
           </div>
         ),
       },
       {
-        q: "What different packages does Vilcom offer and which best suits me?",
+        q: "What different packages does Sigmon offer and which best suits me?",
         a: (
           <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
-            <p>Vilcom Networks offers internet solutions for both home and business.</p>
+            <p>Sigmon Networks offers internet solutions for both home and business.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="bg-muted/40 rounded-lg p-4">
                 <p className="font-bold text-foreground mb-2">🏠 Home Packages</p>
@@ -57,7 +57,7 @@ const FAQ_GROUPS = [
         ),
       },
       {
-        q: "How do I connect my Smart TV to my Vilcom Internet?",
+        q: "How do I connect my Smart TV to my Sigmon Internet?",
         a: (
           <ol className="list-decimal pl-5 space-y-1 text-sm text-muted-foreground leading-relaxed">
             <li>Turn on your Smart TV</li>
@@ -107,10 +107,10 @@ const FAQ_GROUPS = [
         ),
       },
       {
-        q: "How can I get connected to Vilcom Networks?",
+        q: "How can I get connected to Sigmon Networks?",
         a: (
           <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground leading-relaxed">
-            <li>Call our helpline or email us (see FAQ 1). A sales agent will call you to create a Vilcom account.</li>
+            <li>Call our helpline or email us (see FAQ 1). A sales agent will call you to create a Sigmon account.</li>
             <li>Once your account is ready, a technician will be dispatched to install your connection.</li>
             <li>Standard installation timeline is <strong className="text-foreground">48 hours</strong>. We always strive to connect clients on the same day of onboarding.</li>
           </ul>
@@ -137,7 +137,7 @@ const FAQ_GROUPS = [
             </div>
             <div className="bg-muted/40 rounded-lg p-4 space-y-1">
               <p className="font-bold text-foreground">Bank Transfer</p>
-              <p>Account Name: <strong className="text-foreground">VILCOM NETWORKS LIMITED</strong></p>
+              <p>Account Name: <strong className="text-foreground">SIGMON NETWORKS LIMITED</strong></p>
               <p>Account Number: <strong className="text-foreground">2043645032</strong></p>
               <p>Bank: <strong className="text-foreground">Absa Bank Kenya PLC — Westgate Branch</strong></p>
             </div>
@@ -145,7 +145,7 @@ const FAQ_GROUPS = [
         ),
       },
       {
-        q: "How can I get my Vilcom WiFi password or username changed?",
+        q: "How can I get my Sigmon WiFi password or username changed?",
         a: (
           <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground leading-relaxed">
             <li>Contact us via helpline (FAQ 1) or WhatsApp.</li>
@@ -159,7 +159,7 @@ const FAQ_GROUPS = [
         a: <p className="text-sm text-muted-foreground">Currently, we do not have referral offers.</p>,
       },
       {
-        q: "Does Vilcom have any service offers?",
+        q: "Does Sigmon have any service offers?",
         a: (
           <div className="text-sm text-muted-foreground leading-relaxed space-y-2">
             <p>We issue service offers occasionally. There are two types:</p>
@@ -167,7 +167,7 @@ const FAQ_GROUPS = [
               <li><strong className="text-foreground">50% discount</strong> — pay half the service package price</li>
               <li><strong className="text-foreground">100% discount</strong> — pay the full amount</li>
             </ul>
-            <p>Eligible customers receive an SMS from the <strong className="text-foreground">VILCOM</strong> team.</p>
+            <p>Eligible customers receive an SMS from the <strong className="text-foreground">SIGMON</strong> team.</p>
           </div>
         ),
       },
@@ -190,7 +190,7 @@ const FAQ_GROUPS = [
         a: <p className="text-sm text-muted-foreground leading-relaxed">Contact us on any of our channels (FAQ 1) and we'll facilitate your change of service.</p>,
       },
       {
-        q: "What if I want to relocate and I'm not sure if Vilcom covers the area?",
+        q: "What if I want to relocate and I'm not sure if Sigmon covers the area?",
         a: (
           <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground leading-relaxed">
             <li>Call us (FAQ 1) or share your live WhatsApp location.</li>
@@ -217,12 +217,12 @@ const FAQ_GROUPS = [
         ),
       },
       {
-        q: "Can I leave with the Vilcom Router?",
+        q: "Can I leave with the Sigmon Router?",
         a: <p className="text-sm text-muted-foreground leading-relaxed">No. If you no longer need our services or are relocating outside coverage, please contact us so a technician can retrieve the router.</p>,
       },
       {
         q: "Do you offer bundled services such as TV or phone?",
-        a: <p className="text-sm text-muted-foreground leading-relaxed">At the moment, Vilcom offers <strong className="text-foreground">Fibre Internet</strong> (home & business), <strong className="text-foreground">Wireless Hotspots</strong> and <strong className="text-foreground">Web Hosting Services</strong>.</p>,
+        a: <p className="text-sm text-muted-foreground leading-relaxed">At the moment, Sigmon offers <strong className="text-foreground">Fibre Internet</strong> (home & business), <strong className="text-foreground">Wireless Hotspots</strong> and <strong className="text-foreground">Web Hosting Services</strong>.</p>,
       },
       {
         q: "What happens in case of a service outage?",
@@ -234,7 +234,7 @@ const FAQ_GROUPS = [
         ),
       },
       {
-        q: "How does Vilcom billing work?",
+        q: "How does Sigmon billing work?",
         a: (
           <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground leading-relaxed">
             <li>Billing works on an <strong className="text-foreground">anniversary basis</strong> — if you pay on the 25th, your next due date is the 25th of the following month.</li>
@@ -353,7 +353,7 @@ const FAQsPage = () => {
           <div className="vilcom-section text-center flex flex-col items-center">
             <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-3 leading-tight">FAQs</h1>
             <p className="text-base text-muted-foreground max-w-lg">
-              Everything you need to know about Vilcom Networks — getting connected, billing, troubleshooting and more.
+              Everything you need to know about Sigmon Networks - getting connected, billing, troubleshooting and more.
             </p>
           </div>
         </div>
@@ -389,10 +389,10 @@ const FAQsPage = () => {
                 <p className="text-white font-bold mb-1">Still need help?</p>
                 <p className="text-white/60 text-xs mb-3 leading-relaxed">Our team is ready to assist you.</p>
                 <a
-                  href="tel:0111028800"
+                  href="tel:0734711828"
                   className="block text-center text-xs font-bold bg-vilcom-blue text-white px-3 py-2 rounded-lg hover:opacity-90 transition-opacity"
                 >
-                  Call 0111 028800
+                  Call 0734 711828
                 </a>
               </div>
             </aside>

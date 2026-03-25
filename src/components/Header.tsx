@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
-import logo from "@/assets/vilcom-logo.png";
+import logo from "@/assets/sigmon-logo.jpeg";
 import PDFModal from "@/components/PDFModal";
 
 const aboutDropdown = [
@@ -143,7 +143,7 @@ const Header = () => {
         <div className="vilcom-section flex items-center justify-between py-3">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
-            <img src={logo} alt="Vilcom Networks Ltd." className="h-14 w-auto" />
+            <img src={logo} alt="Sigmon Networks Limited." className="h-14 w-auto" />
           </Link>
 
           {/* Desktop Nav */}

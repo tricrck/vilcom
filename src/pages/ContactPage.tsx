@@ -14,41 +14,41 @@ const CONTACT_INFO = [
   {
     icon: <Building2 className="w-4 h-4" />,
     label: "Physical Address",
-    value: "Ramco Court, Block B, Mombasa Road",
-    href: "https://www.google.com/maps/search/Ramco+Court+Block+B+Mombasa+Road+Nairobi",
+    value: "Mbagathi, Magadi Rd",
+    href: "https://www.google.com/maps/search/Mbagathi,+Magadi+Road+Nairobi",
   },
   {
     icon: <MapPin className="w-4 h-4" />,
     label: "Postal Address",
-    value: "P.O Box 24559-00502 Nairobi",
+    value: "P.O. Box 15561-00503 Nairobi",
     href: null,
   },
+  // {
+  //   icon: <Phone className="w-4 h-4" />,
+  //   label: "Phone (Safaricom)",
+  //   value: "0111 028800",
+  //   sub: "Helpline Call Only",
+  //   href: "tel:0111028800",
+  // },
   {
     icon: <Phone className="w-4 h-4" />,
     label: "Phone (Safaricom)",
-    value: "0111 028800",
-    sub: "Helpline Call Only",
-    href: "tel:0111028800",
-  },
-  {
-    icon: <Phone className="w-4 h-4" />,
-    label: "Phone (Safaricom)",
-    value: "0726 888777",
+    value: "0734 711828",
     sub: "WhatsApp / Call",
-    href: "https://wa.me/254726888777",
+    href: "https://wa.me/254734711828",
   },
-  {
-    icon: <Phone className="w-4 h-4" />,
-    label: "Phone (Airtel)",
-    value: "0755 055555",
-    sub: "WhatsApp / SMS",
-    href: "https://wa.me/254755055555",
-  },
+  // {
+  //   icon: <Phone className="w-4 h-4" />,
+  //   label: "Phone (Airtel)",
+  //   value: "0755 055555",
+  //   sub: "WhatsApp / SMS",
+  //   href: "https://wa.me/254755055555",
+  // },
   {
     icon: <Mail className="w-4 h-4" />,
     label: "Email Address",
-    value: "customercare@vilcom.co.ke",
-    href: "mailto:customercare@vilcom.co.ke",
+    value: "info@sigmon.africa",
+    href: "mailto:info@sigmon.africa",
   },
   {
     icon: <Clock className="w-4 h-4" />,
@@ -197,7 +197,7 @@ const ContactPage = () => {
                 <p className="text-[11px] text-muted-foreground mb-0.5">or Call for Consultation</p>
                 <a href="tel:0111028800"
                   className="text-lg font-extrabold text-foreground hover:text-vilcom-blue transition-colors">
-                  0111 028800
+                  0734 711828
                 </a>
               </div>
             </div>
@@ -321,17 +321,17 @@ const ContactPage = () => {
         <div className="vilcom-section pb-14">
           <div className="rounded-xl overflow-hidden border border-border/50 shadow-sm" style={{ height: "280px" }}>
             <iframe
-              title="Vilcom Networks — Ramco Court, Mombasa Road"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=36.8253%2C-1.3237%2C36.8453%2C-1.3137&layer=mapnik&marker=-1.3187719%2C36.8353887"
+              title="Sigmon Networks — Mbagathi, Magadi Road"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=36.76910251379014%2C-1.3815497520635873%2C36.77161306142808%2C-1.3796164407436462&layer=mapnik&marker=-1.3187719%2C36.8353887"
               className="w-full h-full border-0"
               loading="lazy"
               allowFullScreen
             />
           </div>
           <p className="text-xs text-muted-foreground mt-2 text-center">
-            Ramco Court, Block B, Mombasa Road, Nairobi ·{" "}
+            Mbagathi, Magadi Road, Nairobi ·{" "}
             <a
-              href="https://www.google.com/maps/search/Ramco+Court+Block+B+Mombasa+Road+Nairobi"
+              href="https://www.google.com/maps/search/Mbagathi,+Magadi+Road+Nairobi"
               target="_blank"
               rel="noopener noreferrer"
               className="text-vilcom-blue hover:underline font-medium"

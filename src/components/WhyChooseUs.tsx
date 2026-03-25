@@ -7,7 +7,7 @@ interface FeatureBoxProps {
 }
 
 const ROW1: FeatureBoxProps[] = [
-  { icon: 'https://vilcom.ke/wp-content/uploads/2024/05/icons8-speed-100.png', title: 'High Speed', desc: 'Enjoy our high speeds of Vilcom fiber for your office meetings and entertainment purposes', iconBg: '#4169ED', label: null },
+  { icon: 'https://vilcom.ke/wp-content/uploads/2024/05/icons8-speed-100.png', title: 'High Speed', desc: 'Enjoy our high speeds of Sigmon fiber for your office meetings and entertainment purposes', iconBg: '#4169ED', label: null },
   { icon: 'https://vilcom.ke/wp-content/uploads/2024/05/icons8-money-80.png', title: 'Affordability', desc: 'With us you get more for less. We do Installations free of charge. We have no cappings on your usage.', iconBg: '#FF901D', label: 'Exclusive' },
   { icon: 'https://vilcom.ke/wp-content/uploads/2024/05/icons8-online-support-67.png', title: 'Customer Service', desc: 'We provide 24/7 Customer support. Reach out to us at any time of the day for any inquiries', iconBg: '#4169ED', label: null },
   { icon: 'https://vilcom.ke/wp-content/uploads/2024/05/icons8-reliability-68.png', title: 'Reliability', desc: 'With our internet plans you get connected to internet that works 24/7 with zero downtime.', iconBg: '#FF901D', label: null },

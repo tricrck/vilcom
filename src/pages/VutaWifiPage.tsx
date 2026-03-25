@@ -129,7 +129,7 @@ function HeroSection() {
                 letterSpacing: "-0.01em",
               }}
             >
-              Vuta Wifi,{"\n"}Vuta Smile.{"\n"}Only with{"\n"}Vilcom.
+              Vuta Wifi,{"\n"}Vuta Smile.{"\n"}Only with{"\n"}Sigmon.
             </h1>
 
             <p
@@ -179,7 +179,7 @@ function HeroSection() {
           <div style={{ flex: "1 1 280px", maxWidth: 580 }}>
             <img
               src="https://vilcom.co.ke/wp-content/uploads/2026/02/pic1.png"
-              alt="Enterprise Connectivity — Vilcom Networks"
+              alt="Enterprise Connectivity — Sigmon Networks"
               style={{
                 width: "100%",
                 borderRadius: 8,
@@ -216,7 +216,7 @@ function BodySection() {
             lineHeight: 1.2,
           }}
         >
-          Vuta Wifi, Vuta Smile. Only with Vilcom.
+          Vuta Wifi, Vuta Smile. Only with Sigmon.
         </h2>
 
         <div
@@ -236,7 +236,7 @@ function BodySection() {
             In Rongai, speed is everything. From the nganyas on Magadi Road to your daily scrolls, everything moves fast , your internet should too.
           </p>
           <p style={{ margin: "0 0 28px" }}>
-            This month, make the switch to Vilcom, the plug for reliable, no-lag, no-buffer internet that gets your hustle, entertainment, and connections flowing like clockwork.
+            This month, make the switch to Sigmon, the plug for reliable, no-lag, no-buffer internet that gets your hustle, entertainment, and connections flowing like clockwork.
           </p>
 
           {/* Feature blocks — title bold on own line, body below, gap between */}
@@ -275,7 +275,7 @@ function BodySection() {
             <strong style={{ color: NAVY, fontWeight: 700 }}>Make the Switch, Get Plugged, and Level Up</strong>
           </p>
           <p style={{ margin: "0 0 4px" }}>
-            Life in Rongai is about pace, passion, and peace of mind. With Vilcom, you don't just connect you level up. So don't wait till next month.
+            Life in Rongai is about pace, passion, and peace of mind. With Sigmon, you don't just connect you level up. So don't wait till next month.
           </p>
           <p style={{ margin: "0 0 4px" }}>Make the move now. Vuta WiFi. Vuta smile.</p>
           <p style={{ margin: "0 0 4px" }}>Fill out the form below and let's roll.</p>

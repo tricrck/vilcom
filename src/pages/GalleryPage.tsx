@@ -10,13 +10,13 @@ const galleryImages = [
   {
     id: 1,
     src: "https://vilcom.co.ke/wp-content/uploads/2024/06/gallery_1.jpg",
-    alt: "Vilcom Networks Gallery",
+    alt: "Sigmon Networks Gallery",
     aspect: "landscape",
   },
   {
     id: 2,
     src: "https://vilcom.co.ke/wp-content/uploads/2024/06/gallery_6.jpg",
-    alt: "Vilcom Networks Gallery",
+    alt: "Sigmon Networks Gallery",
     aspect: "landscape",
   },
   {
@@ -28,19 +28,19 @@ const galleryImages = [
   {
     id: 4,
     src: "https://vilcom.co.ke/wp-content/uploads/2024/06/gallery_2.jpg",
-    alt: "Vilcom Networks Gallery",
+    alt: "Sigmon Networks Gallery",
     aspect: "landscape",
   },
   {
     id: 5,
     src: "https://vilcom.co.ke/wp-content/uploads/2024/06/gallery_7.jpg",
-    alt: "Vilcom Networks Gallery",
+    alt: "Sigmon Networks Gallery",
     aspect: "portrait",
   },
   {
     id: 6,
     src: "https://vilcom.co.ke/wp-content/uploads/2024/06/gallery_4.jpg",
-    alt: "Vilcom Networks Gallery",
+    alt: "Sigmon Networks Gallery",
     aspect: "portrait",
   },
   {
