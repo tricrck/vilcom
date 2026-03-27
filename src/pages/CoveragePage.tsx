@@ -16,6 +16,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import SEO from "@/components/SEO"
 
 /* ─── Tokens ─────────────────────────────────────────────────── */
 const NAVY   = "#1a2e4a";
@@ -697,6 +698,12 @@ function CoverageMapSection() {
 
 /* ─── Page ───────────────────────────────────────────────────── */
 const CoveragePage = () => (
+  <>
+  <SEO
+    title="Coverage Map | Sigmon Networks Fiber in Nairobi"
+    description="Check if Sigmon Networks fiber internet is available in your area. We're expanding across Nairobi — view our coverage map."
+    canonical="https://vilcom.onrender.com/coverage"
+  />
   <div className="min-h-screen flex flex-col bg-white">
     <ScrollIndicator />
     <Header />
@@ -707,6 +714,7 @@ const CoveragePage = () => (
     <Footer />
     <WhatsAppButton />
   </div>
+  </>
 );
 
 export default CoveragePage;

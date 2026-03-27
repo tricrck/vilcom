@@ -79,6 +79,9 @@
     line-height: 1.6;
   }
 }
+* {
+  cursor: none !important;
+}
 
 @layer components {
   .vilcom-section {

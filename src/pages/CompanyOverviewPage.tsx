@@ -30,6 +30,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import { webPageSchema } from "@/lib/useSEO";
+import SEO from "@/components/SEO";
 
 /* ─── Design tokens ──────────────────────────────────────────── */
 const NAVY   = "#1a2e4a";
@@ -461,6 +463,21 @@ function Testimonials() {
    PAGE
    ───────────────────────────────────────────────────────────── */
 const CompanyOverviewPage = () => (
+  <>
+  <SEO
+    title="About Us | Sigmon Networks Limited"
+    description="Learn about Sigmon Networks — Nairobi's trusted fiber internet provider. Our story, mission, and commitment to connecting Kenya."
+    canonical="https://vilcom.onrender.com/company-overview"
+    schema={webPageSchema({
+      name: "Company Overview",
+      description: "About Sigmon Networks Limited — Nairobi's trusted fiber internet provider.",
+      url: "https://vilcom.onrender.com/company-overview",
+      breadcrumbs: [
+        { name: "Home", url: "https://vilcom.onrender.com/" },
+        { name: "Company Overview", url: "https://vilcom.onrender.com/company-overview" },
+      ],
+    })}
+  />
   <div className="min-h-screen flex flex-col bg-white">
     <ScrollIndicator />
     <Header />
@@ -485,6 +502,7 @@ const CompanyOverviewPage = () => (
     <Footer />
     <WhatsAppButton />
   </div>
+  </>
 );
 
 export default CompanyOverviewPage;

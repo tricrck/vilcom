@@ -4,7 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollIndicator from "@/components/ScrollIndicator";
-import { ArrowLeft, X, ChevronLeft, ChevronRight, Plus } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Plus } from "lucide-react";
+import { webPageSchema } from "@/lib/useSEO";
+import SEO from "@/components/SEO";
 
 const galleryImages = [
   {
@@ -101,6 +103,22 @@ const GalleryPage = () => {
   }, [lightboxIndex]);
 
   return (
+    <>
+    <SEO
+      title="Gallery | Sigmon Networks Infrastructure & Team"
+      description="Browse photos of Sigmon Networks fiber installations, team, and infrastructure across Nairobi and Kenya."
+      canonical="https://vilcom.onrender.com/gallery"
+      image="https://vilcom.co.ke/wp-content/uploads/2024/06/gallery_1.jpg"
+      schema={webPageSchema({
+        name: "Gallery",
+        description: "Photos of Sigmon Networks fiber installations and team across Nairobi, Kenya.",
+        url: "https://vilcom.onrender.com/gallery",
+        breadcrumbs: [
+          { name: "Home", url: "https://vilcom.onrender.com/" },
+          { name: "Gallery", url: "https://vilcom.onrender.com/gallery" },
+        ],
+      })}
+    />
     <div className="min-h-screen flex flex-col">
       <ScrollIndicator />
       <Header />
@@ -211,6 +229,7 @@ const GalleryPage = () => {
       <Footer />
       <WhatsAppButton />
     </div>
+    </>
   );
 };
 

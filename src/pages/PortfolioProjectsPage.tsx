@@ -17,6 +17,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import { webPageSchema } from "@/lib/useSEO";
+import SEO from "@/components/SEO";
 
 /* ─── Design tokens (consistent with CompanyOverviewPage) ─────── */
 const NAVY = "#1a2e4a";
@@ -91,6 +93,22 @@ const PortfolioProjectsPage = () => {
   const { ref: headingRef, on: headingOn } = useReveal(0);
 
   return (
+    <>
+    <SEO
+      title="Portfolio Projects | Our Clients & Partners | Sigmon Networks"
+      description="Explore Sigmon Networks' portfolio of clients and partners across Kenya — businesses and institutions we've connected with high-speed fiber internet."
+      canonical="https://vilcom.onrender.com/portfolio-projects"
+      image="https://vilcom.co.ke/wp-content/uploads/2024/06/portfolio_clients.png"
+      schema={webPageSchema({
+        name: "Portfolio Projects",
+        description: "Sigmon Networks' clients and partners connected with fiber internet across Kenya.",
+        url: "https://vilcom.onrender.com/portfolio-projects",
+        breadcrumbs: [
+          { name: "Home", url: "https://vilcom.onrender.com/" },
+          { name: "Portfolio Projects", url: "https://vilcom.onrender.com/portfolio-projects" },
+        ],
+      })}
+    />
     <div className="min-h-screen flex flex-col bg-white">
       <ScrollIndicator />
       <Header />
@@ -154,6 +172,7 @@ const PortfolioProjectsPage = () => {
       <Footer />
       <WhatsAppButton />
     </div>
+    </>
   );
 };
 

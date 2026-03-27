@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import { ArrowLeft, Plus, Minus } from "lucide-react";
+import { faqPageSchema } from "@/lib/useSEO";
+import SEO from "@/components/SEO";
 
 /* ─── FAQ Data ───────────────────────────────────────────────── */
 const FAQ_GROUPS = [
@@ -340,6 +342,26 @@ const FAQsPage = () => {
   const [activeGroup, setActiveGroup] = useState(0);
 
   return (
+    <>
+    <SEO
+    title="FAQs | Sigmon Networks Fiber Internet"
+    description="Answers to your most common questions about fiber internet, coverage areas, pricing, installation, and support from Sigmon Networks."
+    canonical="https://vilcom.onrender.com/faqs"
+    schema={faqPageSchema([
+      {
+        question: "What areas in Nairobi are covered?",
+        answer: "We cover Westlands, Kilimani, Karen, Lavington, and more. Check our coverage map for full details.",
+      },
+      {
+        question: "How fast is your fiber internet?",
+        answer: "We offer symmetric speeds from 10 Mbps to 1 Gbps depending on your package.",
+      },
+      {
+        question: "How long does installation take?",
+        answer: "Standard installations are completed within 3–5 business days after order confirmation.",
+      },
+      // ← Add all your real FAQs here
+    ])} />
     <div className="min-h-screen flex flex-col">
       <ScrollIndicator />
       <Header />
@@ -457,6 +479,7 @@ const FAQsPage = () => {
       <Footer />
       <WhatsAppButton />
     </div>
+    </>
   );
 };
 

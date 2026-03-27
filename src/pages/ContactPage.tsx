@@ -8,6 +8,7 @@ import {
   ArrowLeft, MapPin, Mail, Phone, Clock, Building2,
   Send, CheckCircle2, AlertCircle,
 } from "lucide-react";
+import SEO from "@/components/SEO"
 
 /* ─── Contact info ───────────────────────────────────────────── */
 const CONTACT_INFO = [
@@ -156,6 +157,12 @@ const ContactPage = () => {
   };
 
   return (
+    <>
+    <SEO
+    title="Contact Us | Sigmon Networks"
+    description="Get in touch with Sigmon Networks. Sales, support, and general enquiries — we're here to help. Call, email, or WhatsApp us."
+    canonical="https://vilcom.onrender.com/contact"
+  />
     <div className="min-h-screen flex flex-col">
       <ScrollIndicator />
       <Header />
@@ -346,6 +353,7 @@ const ContactPage = () => {
       <Footer />
       <WhatsAppButton />
     </div>
+   </>
   );
 };
 

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import SEO from "@/components/SEO";
 
 /* ─── Types ─────────────────────────────────────────────────── */
 interface WPPost {
@@ -313,6 +314,12 @@ const BlogPage = () => {
   const goToPage = (p: number) => setSearchParams(p === 1 ? {} : { page: String(p) });
 
   return (
+    <>
+    <SEO
+      title="Blog | Fiber Internet Tips & Nairobi Tech News | Sigmon Networks"
+      description="Stay updated with the latest fiber internet tips, Nairobi tech news, and company updates from Sigmon Networks."
+      canonical="https://vilcom.onrender.com/blog"
+    />
     <div className="min-h-screen flex flex-col">
       <ScrollIndicator />
       <Header />
@@ -409,6 +416,7 @@ const BlogPage = () => {
       <Footer />
       <WhatsAppButton />
     </div>
+    </>
   );
 };
 

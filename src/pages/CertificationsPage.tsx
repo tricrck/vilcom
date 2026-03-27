@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react";
+import { webPageSchema } from "@/lib/useSEO";
+import SEO from "@/components/SEO";
 
 /* ─── Data ────────────────────────────────────────────────────── */
 const CERTIFICATIONS = [
@@ -253,6 +255,21 @@ function FloatingTags() {
 /* ─── Page ─────────────────────────────────────────────────────── */
 const CertificationsPage = () => {
   return (
+    <>
+    <SEO
+      title="Free Online Certifications | Knowledge Hub | Sigmon Networks"
+      description="Explore our curated Knowledge Sharing Hub of free online certification courses — Google IT, Harvard CS50, IBM Data Science, Python, and more."
+      canonical="https://vilcom.onrender.com/certifications"
+      schema={webPageSchema({
+        name: "Free Online Certifications Hub",
+        description: "Curated free online certification courses across IT, data science, programming, and marketing.",
+        url: "https://vilcom.onrender.com/certifications",
+        breadcrumbs: [
+          { name: "Home", url: "https://vilcom.onrender.com/" },
+          { name: "Certifications", url: "https://vilcom.onrender.com/certifications" },
+        ],
+      })}
+    />
     <div className="min-h-screen flex flex-col">
       <ScrollIndicator />
       <Header />
@@ -383,6 +400,7 @@ const CertificationsPage = () => {
       <Footer />
       <WhatsAppButton />
     </div>
+     </>
   );
 };
 

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import SEO from "@/components/SEO"
 
 const CAREERS_URL = "https://careers.vilcom.co.ke:8099";
 
@@ -23,6 +24,13 @@ const CareersPage = () => {
   }, []);
 
   return (
+    <>
+    <SEO
+  title="Careers | Join Sigmon Networks"
+    description="Explore career opportunities at Sigmon Networks. We're hiring talented people to help connect Nairobi with fast, reliable fiber internet."
+    canonical="https://vilcom.onrender.com/careers"
+    noIndex={true}   // ← optional: careers redirects out, so don't index it
+  />
     <div className="min-h-screen flex flex-col bg-white">
       <ScrollIndicator />
       <Header />
@@ -98,6 +106,7 @@ const CareersPage = () => {
       <Footer />
       <WhatsAppButton />
     </div>
+    </>
   );
 };
 

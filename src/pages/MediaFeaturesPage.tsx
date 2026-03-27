@@ -15,6 +15,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import { webPageSchema } from "@/lib/useSEO";
+import SEO from "@/components/SEO";
 
 /* ─── Design tokens ──────────────────────────────────────────── */
 const NAVY   = "#1a2e4a";
@@ -312,6 +314,22 @@ const MediaFeaturesPage = () => {
   const { ref: headRef, on: headOn } = useReveal(0);
 
   return (
+    <>
+    <SEO
+      title="Media Features | Sigmon Networks in the Press"
+      description="Read press coverage, news articles, and media features about Sigmon Networks — ranked 5th in Kenya's broadband market by the Communications Authority."
+      canonical="https://vilcom.onrender.com/media-features"
+      image="https://vilcom.co.ke/wp-content/uploads/2024/06/Kilamtu_Plain_Compressed.jpg"
+      schema={webPageSchema({
+        name: "Media Features",
+        description: "Press coverage and news articles featuring Sigmon Networks across Kenyan media.",
+        url: "https://vilcom.onrender.com/media-features",
+        breadcrumbs: [
+          { name: "Home", url: "https://vilcom.onrender.com/" },
+          { name: "Media Features", url: "https://vilcom.onrender.com/media-features" },
+        ],
+      })}
+    />
     <div className="min-h-screen flex flex-col bg-white">
       <ScrollIndicator />
       <Header />
@@ -366,6 +384,7 @@ const MediaFeaturesPage = () => {
       <Footer />
       <WhatsAppButton />
     </div>
+    </>
   );
 };
 

@@ -18,6 +18,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import SEO from "@/components/SEO";
+import { serviceSchema } from "@/lib/useSEO";
 
 /* ─── Tokens ─────────────────────────────────────────────────── */
 const NAVY    = "#1a2e4a";   /* body/form headings */
@@ -524,6 +526,18 @@ function EnrollForm() {
 
 /* ─── Page ───────────────────────────────────────────────────── */
 const VutaWifiPage = () => (
+  <>
+  <SEO
+  title="Vuta WiFi | Home Fiber Packages | Sigmon Networks"
+  description="Vuta WiFi home fiber packages in Nairobi — fast, affordable, and always-on. Check coverage and get connected today."
+  canonical="https://vilcom.onrender.com/vuta-wifi"
+  schema={serviceSchema({
+    name: "Vuta WiFi Home Fiber",
+    description: "Residential fiber internet packages for Nairobi homes.",
+    url: "https://vilcom.onrender.com/vuta-wifi",
+    category: "Residential Internet Service",
+  })}
+/>
   <div className="min-h-screen flex flex-col bg-white">
     <ScrollIndicator />
     <Header />
@@ -535,6 +549,7 @@ const VutaWifiPage = () => (
     <Footer />
     <WhatsAppButton />
   </div>
+  </>
 );
 
 export default VutaWifiPage;
